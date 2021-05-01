@@ -1,0 +1,9 @@
+/Cache/
+/Logs/
+/Temp/
+/Build/
+/Output/
+/Binaries/
+.vs/
+
+.idea/

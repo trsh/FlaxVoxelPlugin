@@ -1,0 +1,116 @@
+{
+	"ID": "c10ca0ce47de0af00ed31182e36bd777",
+	"TypeName": "FlaxEngine.SceneAsset",
+	"EngineBuild": 6218,
+	"Data": [
+		{
+			"ID": "c10ca0ce47de0af00ed31182e36bd777",
+			"TypeName": "FlaxEngine.Scene",
+			"LightmapSettings": {
+				"IndirectLightingIntensity": 1.0,
+				"GlobalObjectsScale": 1.0,
+				"ChartsPadding": 3,
+				"AtlasSize": 1024,
+				"BounceCount": 1,
+				"CompressLightmaps": true,
+				"UseGeometryWithNoMaterials": true,
+				"Quality": 10
+			}
+		},
+		{
+			"ID": "5affbd34462c4bc54c77ee930e15d753",
+			"TypeName": "FlaxEngine.DirectionalLight",
+			"ParentID": "c10ca0ce47de0af00ed31182e36bd777",
+			"Name": "Sun",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 160.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.3826834559440613,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9238795042037964
+				}
+			}
+		},
+		{
+			"ID": "65e6fa5c42d2eea374025da77bc92721",
+			"TypeName": "FlaxEngine.Sky",
+			"ParentID": "c10ca0ce47de0af00ed31182e36bd777",
+			"Name": "Sky",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 150.0,
+					"Z": 0.0
+				}
+			},
+			"Sun": "5affbd34462c4bc54c77ee930e15d753"
+		},
+		{
+			"ID": "ebb586874852d6f61da26fa46924d26a",
+			"TypeName": "FlaxEngine.SkyLight",
+			"ParentID": "c10ca0ce47de0af00ed31182e36bd777",
+			"Name": "SkyLight",
+			"Brightness": 2.5,
+			"CustomTexture": "c54410104ff39427bc11e5bc761d66b0"
+		},
+		{
+			"ID": "2e6226bb47ce079ef6bd259026a0983f",
+			"TypeName": "FlaxEngine.Camera",
+			"ParentID": "c10ca0ce47de0af00ed31182e36bd777",
+			"Name": "Camera",
+			"Transform": {
+				"Translation": {
+					"X": 45.48423767089844,
+					"Y": 60.210723876953128,
+					"Z": -177.13851928710938
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.00930078700184822,
+					"Z": 0.0,
+					"W": 0.9999567866325378
+				}
+			}
+		},
+		{
+			"ID": "0913e63b4574333b370957a76f2c84ed",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "c10ca0ce47de0af00ed31182e36bd777",
+			"Name": "EmptyActor"
+		},
+		{
+			"ID": "f4c12ea847698ad8390549b50223beac",
+			"TypeName": "Voxels.Voxels",
+			"ParentID": "0913e63b4574333b370957a76f2c84ed",
+			"Camera": "2e6226bb47ce079ef6bd259026a0983f",
+			"LodDistances": [
+				200,
+				400,
+				600
+			]
+		},
+		{
+			"ID": "6037a2f24a12d453a54d1286c0761947",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "0913e63b4574333b370957a76f2c84ed",
+			"Name": "GenMesh",
+			"Model": "ef25c0834b9bcd432667aca50c73b639",
+			"ForcedLOD": 0,
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		}
+	]
+}
